@@ -1,0 +1,40 @@
+.box {
+  margin-left: 19%;
+  margin-top: 5%;
+}
+
+.list{
+  border: 1px solid #ccc;
+  width: 1000px;
+  min-height: 15px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+} 
+.name{
+  margin-left: 5px;
+  color: #038ac7;
+}
+ 
+.msg {
+  margin-left: 250px;
+}
+
+
+.time {
+  margin-left: 350px;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  padding: 12px;
+}
+
+.fa {
+  color: #038ac7;
+}
+
+.fa-file-o:before {
+  color: #3d464b;
+}
