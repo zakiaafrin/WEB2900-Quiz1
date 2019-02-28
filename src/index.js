@@ -68,20 +68,22 @@ function FileList({ testFiles }) {
     return (
         <div className="box">
             <table>
-                {testFiles.map((testFiles) =>
-                    <tr className="list" key={testFiles.id}>
-                        <td>
-                            {testFiles.type === 'folder' ? <Folder /> : <File />}
-                            <Name text={testFiles.name} />
-                        </td>
-                        <td>
-                            <Message latestCommit={testFiles.latestCommit} />
-                        </td>
-                        <td>
-                            <Time time={testFiles.updated_at} />
-                        </td>
-                    </tr>
-                )}
+                <tbody>
+                    {testFiles.map((testFiles) =>
+                        <tr className="list" key={testFiles.id}>
+                            <td>
+                                {testFiles.type === 'folder' ? <Folder /> : <File />}
+                                <Name text={testFiles.name} />
+                            </td>
+                            <td>
+                                <Message latestCommit={testFiles.latestCommit} />
+                            </td>
+                            <td>
+                                <Time time={testFiles.updated_at} />
+                            </td>
+                        </tr>
+                    )}
+                </tbody>
             </table>
         </div>
     );
